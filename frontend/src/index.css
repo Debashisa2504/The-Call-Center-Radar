@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-zinc-950 text-zinc-100; font-family: 'Inter', sans-serif; }
+
+.mood-calm        { @apply text-blue-400; }
+.mood-satisfied   { @apply text-green-400; }
+.mood-confused    { @apply text-amber-400; }
+.mood-frustrated  { @apply text-orange-400; }
+.mood-angry       { @apply text-red-400; }
+
+.ghost-badge      { @apply bg-red-900/60 text-red-300 border border-red-700; }
+.resolved-badge   { @apply bg-green-900/60 text-green-300 border border-green-700; }
+.unresolved-badge { @apply bg-zinc-800 text-zinc-400 border border-zinc-700; }
