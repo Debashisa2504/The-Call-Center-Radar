@@ -166,7 +166,7 @@ GHOST_WINDOW_MIN=30
 INGEST_WORKERS=2
 
 # 5. Initialise the database schema (safe to re-run — all statements are IF NOT EXISTS)
-python init_schema.py
+python scripts/init_schema.py
 
 # 6. Frontend packages
 cd frontend && npm install && cd ..
@@ -286,7 +286,7 @@ callradar/
 │   ├── find_bad_calls.py       Find calls with missing analysis fields
 │   ├── batch_compliance.py     Re-evaluate compliance for all calls
 │   └── ...                     Other one-off inspection scripts
-├── init_schema.py              One-time DB schema setup (safe to re-run)
+│   └── init_schema.py          One-time DB schema setup (safe to re-run)
 ├── requirements.txt
 ├── .env.example                Template — copy to .env and fill in credentials
 └── .env                        Your credentials (not committed)
